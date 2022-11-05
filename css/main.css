@@ -26,10 +26,18 @@
     font-weight: bold;
 }
 
+@font-face {
+    font-family: "Montserrat Light";
+    src: url('../fonts/static/Montserrat-Light.ttf');
+    font-style: light;
+    font-weight: lighter;
+}
 body {
     font-family: 'Montserrat';
 }
-
+a{
+    color: #278AFF;
+}
 .link {
     color: black;
     text-decoration: none;
@@ -126,7 +134,7 @@ body {
     top: calc(50% + 10px);
 }
 
-.block_1__content {
+.block_contents__content {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -136,7 +144,9 @@ body {
 .content__h1 {
     font-size: 60px;
 }
-
+.content__p{
+    font-family: "Montserrat Light";
+}
 .content__left_block {
     display: flex;
     flex-direction: column;
@@ -167,6 +177,7 @@ body {
     border-radius: 50%;
     width: 35px;
     height: 35px;
+    margin-top: 15px;
 }
 
 .content__block_buttons {
@@ -210,10 +221,10 @@ body {
 
 .block_text__header_text {
     font-family: 'Montserrat Italic';
-    font-weight: normal;
-    font-size: 1.3em;
+    font-weight: lighter;
+    font-size: 1.2em;
     padding: 10px;
-    line-height: 28px;
+    line-height: 32px;
 }
 
 .block_text__main_text {
@@ -251,14 +262,14 @@ body {
     font-size: 1em;
 }
 
-.block_3 {
+.block_services {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
 }
 
-.block_3__content {
+.block_services__content {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -269,7 +280,7 @@ body {
 
 .content__logo {
     width: 100%;
-    font-size: 4em;
+    font-size: 3em;
     color: #333333;
 }
 
@@ -290,7 +301,7 @@ body {
     padding: 10px;
     color: white;
     transition: 400ms;
-    width: 40%;
+    width: 150px;
     text-align: center;
 }
 
@@ -302,14 +313,14 @@ body {
     width: 100%;
 }
 
-.block_4 {
+.block_table {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 800px;
 }
 
-.block_4__content {
+.block_table__content {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -341,21 +352,21 @@ body {
 }
 
 .blocks__block:nth-child(even) {
-    margin-left: 20px;
+    margin-left: 50px;
 }
 
 .blocks__price {
     color: #00BF78;
 }
 
-.block_5 {
+.block_masters {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #F8F6F7;
 }
 
-.block_5__content {
+.block_masters__content {
     width: 75%;
 }
 
@@ -368,14 +379,26 @@ body {
 .block__image {
     cursor: pointer;
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
 }
-
-.block__image:hover {
+.block__image__p{
+    position: absolute;
+    color: white;
+    opacity: 0;
+}
+.block__image:hover .block_image__image{
     transform: translateY(-10px);
     box-shadow: 0 15px 15px lightgray;
+    filter: brightness(0.4);
     transition: 200ms;
 }
-
+.block__image:hover .block__image__p{
+    opacity: 1;
+    transition: 200ms;
+}
 .content__grid_block {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -428,13 +451,29 @@ body {
 
 .image_grid_block__image_block {
     width: 23%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .image_grid_block__image_block:hover .image_block__image {
     transform: translateX(-25px) translateY(-25px);
+    filter: brightness(0.4);
     transition: 400ms;
 }
-
+.image_grid_block__loupe_block{
+    text-align: center;
+    position: absolute;
+    opacity: 0;
+}
+.image_grid_block__loupe_block p{
+    color: white;
+}
+.image_grid_block__image_block:hover .image_grid_block__loupe_block{
+    transform: translateX(-25px) translateY(-25px);
+    opacity: 1;
+    transition: 400ms;
+}
 .content__brands_block {
     display: flex;
     justify-content: space-around;
@@ -442,7 +481,7 @@ body {
     width: 70%;
 }
 
-.block_7 {
+.block_contacts {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -450,7 +489,7 @@ body {
     height: 600px;
 }
 
-.block_7__content {
+.block_contacts__content {
     width: 75%;
     display: flex;
     justify-content: space-between;
@@ -596,7 +635,7 @@ body {
         height: 60px;
     }
 
-    .block_1__content {
+    .block_contents__content {
         flex-direction: column-reverse;
     }
 
@@ -618,9 +657,13 @@ body {
     }
 
     .block_image_image {
-        width: 100%;
+        width: 80%;
     }
-
+    .content__block_image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .content__block_text {
         width: 100%;
     }
@@ -628,6 +671,7 @@ body {
     .block_text__logo {
         width: 100%;
         text-align: center;
+        font-size: 2.5em;
     }
 
     .block_2__advantages_block {
@@ -650,7 +694,7 @@ body {
         text-align: left;
     }
 
-    .block_3__content {
+    .block_services__content {
         width: 100%;
         text-align: center;
     }
@@ -659,10 +703,12 @@ body {
         width: 25%;
     }
 
-    .block_4__content {
+    .block_table__content {
         width: 80%;
     }
-
+    .header__logo{
+        font-size: 2.5em;
+    }
     .content__blocks {
         display: flex;
         flex-direction: column;
@@ -679,6 +725,7 @@ body {
     .navigation__logo {
         text-align: center;
         width: 100%;
+        font-size: 2.5em;
     }
 
     .content__grid_block {
@@ -690,9 +737,12 @@ body {
     .block_5__content {
         width: 100%;
     }
-
+    .content__logo{
+        font-size: 2.5em;
+    }
     .block_5_content__logo {
         text-align: center;
+        font-size: 2.5em;
     }
 
     .block_5__content__description {
@@ -700,7 +750,7 @@ body {
     }
 
     .block__image {
-        width: 90%;
+        width: 100%;
     }
 
     .grid_block__block {
@@ -716,6 +766,7 @@ body {
 
     .content__image_grid_block {
         flex-direction: column;
+        width: 100%;
     }
 
     .content__brands_block {
@@ -723,7 +774,7 @@ body {
     }
 
     .image_grid_block__image_block {
-        width: 90%;
+        width: 100%;
     }
 
     .image_block__image {
@@ -739,11 +790,11 @@ body {
         display: none;
     }
 
-    .block_7 {
+    .block_contacts {
         height: 1600px;
     }
 
-    .block_7__content {
+    .block_contacts__content {
         width: 100%;
         flex-direction: column;
         height: 0;
@@ -769,6 +820,7 @@ body {
 
     .desc_left_block__bottom {
         height: 200px;
+        margin-top: 100px;
     }
 
     .footer__right_block {
