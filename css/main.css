@@ -138,12 +138,17 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 88%;
 }
 .block_contents{
     background: url('../img/main/block_1/bg.png');
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .content__h1 {
-    font-size: 60px;
+    font-size: 2.5em;
+    color: #333333;
 }
 .content__p{
     font-family: "Montserrat Light";
@@ -160,7 +165,7 @@ a{
     padding: 15px;
     color: white;
     transition: 400ms;
-    width: 30%;
+    width: 250px;
     text-align: center;
 }
 
@@ -515,7 +520,7 @@ a{
 }
 
 .buttons_button__image {
-    width: 15%;
+    width: 12%;
 }
 
 .content__form_block {
@@ -523,9 +528,11 @@ a{
     justify-content: center;
     align-items: center;
     height: 100%;
-    width: 40%;
+    width: 44%;
 }
-
+.block_form__p{
+    font-family: 'Montserrat Light';
+}
 .form_block__form {
     border-radius: 15px;
     background-color: white;
@@ -579,7 +586,12 @@ a{
     justify-content: space-around;
     align-items: center;
 }
-
+.block_bottom__buttons{
+    margin-top: 10px;
+}
+.bottom_buttons__button{
+    margin-right: 25px;
+}
 /* Модификаторы  */
 .text_align_end {
     text-align: end;
