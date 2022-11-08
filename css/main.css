@@ -138,9 +138,10 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.block_contents{
     background: url('../img/main/block_1/bg.png');
 }
-
 .content__h1 {
     font-size: 60px;
 }
@@ -613,7 +614,7 @@ a{
 }
 
 /* Адаптивка */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .nav__links {
         display: none;
     }
@@ -621,7 +622,18 @@ a{
     .nav {
         width: 100%;
     }
-
+    .nav__logo{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 35%;
+    }
+    .nav__menu_btn{
+        width: 45px;
+    }
+    .nav__contacts p{
+        margin-top: 10px;
+    }
     .content__image {
         display: none;
     }
@@ -631,10 +643,8 @@ a{
     }
 
     .right_block__button {
-        width: 60px;
-        height: 60px;
+        margin-left: 15px;
     }
-
     .block_contents__content {
         flex-direction: column-reverse;
     }
@@ -642,18 +652,17 @@ a{
     .content__left_block {
         justify-content: center;
         align-items: center;
-        width: 100%;
+        width: 80%;
         text-align: center;
     }
 
     .content__h1 {
         font-size: 3em;
-        margin-bottom: 30px;
     }
 
     .left_block__button {
         width: 50%;
-        margin-top: 10px;
+        margin-top: 50px;
     }
 
     .block_image_image {
@@ -828,7 +837,263 @@ a{
     }
 }
 
-@media (min-width: 600px) {
+@media (max-width: 480px) {
+    .nav__links {
+        display: none;
+    }
+
+    .nav {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        position: relative;
+    }
+    .nav__logo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 73%;
+        margin-right: 100px;
+        position: relative;
+        top: 30px;
+    }
+    .nav__logo h1{
+        font-size: 2em;
+    }
+    .nav__menu_btn{
+        width: 45px;
+    }
+    .nav__contacts{
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .nav__contacts p{
+        margin-top: 10px;
+    }
+    .content__image {
+        display: none;
+    }
+
+    .content__block_buttons {
+        display: none;
+    }
+    .block_contents{
+        height: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .right_block__button {
+        margin-left: 15px;
+    }
+    .block_contents__content {
+        flex-direction: column-reverse;
+    }
+
+    .content__left_block {
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        text-align: center;
+    }
+
+    .content__h1 {
+        font-size: 2.5em;
+    }
+    .content__p {
+        font-size: 1.2em;
+    }
+    .nav__contacts h1{
+        font-size: 1.2em;
+    }
+    .nav__contacts p{
+        font-size: 0.8em;
+    }
+    .t_block__button {
+        margin-top: 50px;
+        width: 250px;
+    }
+    .left_block__button{
+        width: 250px;
+    }
+    .block_image_image {
+        width: 80%;
+    }
+    .content__block_image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .content__block_text {
+        width: 100%;
+    }
+
+    .block_text__logo {
+        width: 100%;
+        text-align: center;
+        font-size: 2.5em;
+    }
+
+    .block_2__advantages_block {
+        flex-direction: column;
+    }
+
+    .advantages_block {
+        width: 80%;
+    }
+
+    .block_2__content {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .content__services {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+    }
+
+    .block_services__content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .services_block__link {
+        width: 120px;
+    }
+
+    .block_table__content {
+        width: 80%;
+    }
+    .header__logo{
+        font-size: 2.5em;
+    }
+    .content__blocks {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .blocks__block:nth-child(even) {
+        margin-left: 0;
+    }
+
+    .blocks__block {
+        margin-top: 10px;
+    }
+
+    .navigation__logo {
+        text-align: center;
+        width: 100%;
+        font-size: 2.5em;
+    }
+
+    .content__grid_block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .block_5__content {
+        width: 100%;
+    }
+    .content__logo{
+        font-size: 2.5em;
+    }
+    .block_5_content__logo {
+        text-align: center;
+        font-size: 2.5em;
+    }
+
+    .block_5__content__description {
+        text-align: center;
+    }
+
+    .block__image {
+        width: 100%;
+    }
+
+    .grid_block__block {
+        margin-top: 20px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .content__header {
+        display: block;
+        text-align: center;
+    }
+
+    .content__image_grid_block {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .content__brands_block {
+        flex-direction: column;
+    }
+
+    .image_grid_block__image_block {
+        width: 100%;
+    }
+
+    .image_block__image {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .brands_block__brand {
+        margin-top: 20px;
+    }
+
+    .content_header__arrow_button {
+        display: none;
+    }
+
+    .block_contacts {
+        height: 1600px;
+    }
+
+    .block_contacts__content {
+        width: 100%;
+        flex-direction: column;
+        height: 0;
+        justify-content: center;
+        align-items: none;
+        height: 40%;
+    }
+
+    .content__form_block {
+        width: 80%;
+        height: 0;
+    }
+
+    .content__desc_left_block {
+        margin-top: -250px;
+    }
+
+    .desc_left_block__top {
+        height: 150px;
+        margin-top: -200px;
+        margin: 0;
+    }
+
+    .desc_left_block__bottom {
+        height: 200px;
+        margin-top: 100px;
+    }
+
+    .footer__right_block {
+        display: none;
+    }
+}
+
+@media (min-width: 769px) {
     .nav__menu_btn {
         display: none;
     }
