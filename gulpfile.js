@@ -8,11 +8,11 @@ const browserSync = require('browser-sync').create();
 const clean = require('gulp-clean');
 
 const PATHS = {
-    src: 'src',
+    src: './',
     dist: 'dist',
-    scss: `${PATHS.src}/scss/**/*.scss`,
-    html: `${PATHS.src}/**/*.html`,
-    images: `${PATHS.src}/images/**/*.*`
+    scss: `./scss/*.scss`,
+    html: `./*.html`,
+    images: [`./img/**/*.*`,`./img/*.*`]
 };
 
 // Таск компиляции SASS в CSS
