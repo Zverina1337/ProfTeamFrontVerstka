@@ -5,56 +5,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="dist/css/main.css">
+    <link rel="stylesheet" href="css/main.css">
     <title>Мир красоты</title>
 </head>
 
 <body>
     <header class="header">
-        <nav class="nav">
-            <div class="nav__logo">
-                <div class="nav__menu_btn">
+        <div class="header__content_block">
+            <div class="content_block__logo_block">
+                <!-- <div class="nav__menu_btn">
                     <span></span>
                     <span></span>
                     <span></span>
-                </div>
-                <h1>Мир красоты</h1>
+                </div> -->
+                <h1 class="content_block__logo">Мир красоты</h1>
             </div>
-            <div>
-                <ul class="list nav__links">
-                    <li class="links__li"><a href="#" class="link links__a">Услуги и цены</a></li>
-                    <li class="links__li"><a href="#" class="link links__a">Мастера</a></li>
-                    <li class="links__li"><a href="#" class="link links__a">Наши работы</a></li>
-                    <li class="links__li"><a href="#" class="link links__a">О нас</a></li>
-                    <li class="links__li"><a href="#" class="link links__a">Контакты</a></li>
-                </ul>
+            <nav class="content_block__navigation_block">
+                <a href="#" class="navigation_block__link">Услуги и цены</a>
+                <a href="#" class="navigation_block__link">Мастера</a>
+                <a href="#" class="navigation_block__link">Наши работы</a>
+                <a href="#" class="navigation_block__link">О нас</a>
+                <a href="#" class="navigation_block__link">Контакты</a>
+            </nav>
+            <div class="content_block__contacts_block">
+                <h1 class="contacts_block__phone">8 (499) 686-17-62</h1>
+                <p class="contacts_block__worktime">с 10.00 до 19.00 без выходных</p>
             </div>
-            <div class="nav__contacts">
-                <h1 class="text_align_end">8 (499) 686-17-62</h1>
-                <p>с 10.00 до 19.00 без выходных</p>
-            </div>
-        </nav>
+        </div>
     </header>
     <main>
-        <section class="block_contents">
-            <div class="block_contents__content">
-                <div class="content__left_block">
-                    <h1 class="content__h1 margin_top">Создай свой образ вместе с нами</h1>
-                    <p class="content__p margin_top">Идеальный образ за 60 минут</p>
-                    <a href="#" class="link left_block__button margin_top100">Записаться онлайн</a>
-                    <div class="content__block_buttons__second margin_top margin_bottom">
+        <section class="block_table_of_contents">
+            <div class="block_table_of_contents__content_block">
+                <div class="content_block__left_block">
+                    <h1 class="left_block__title">Создай свой образ вместе с нами</h1>
+                    <p class="left_block__desc">Идеальный образ за 60 минут</p>
+                    <a href="#" class="left_block__link">Записаться онлайн</a>
+                    <!-- <div class="content__block_buttons__second">
                         <button class="button right_block__button"></button>
                         <button class="button right_block__button"></button>
                         <button class="button right_block__button"></button>
-                    </div>
+                    </div> -->
                 </div>
-                <div class="content__right_block">
+                <div class="content_block__right_block">
                     <div class="right_block__image_block">
-                        <img src="./img/main/block_1/img.png" alt="" class="content__image">
-                        <div class="content__block_buttons">
-                            <button class="button right_block__button"></button>
-                            <button class="button right_block__button"></button>
-                            <button class="button right_block__button"></button>
+                        <img src="./img/main/block_1/img.png" alt="" class="image_block__image">
+                        <div class="image_block__block_links">
+                            <a href="" class="block_links__link"></a>
+                            <a href="" class="block_links__link"></a>
+                            <a href="" class="block_links__link"></a>
                         </div>
                     </div>
                 </div>
@@ -325,7 +323,7 @@
                         <a href="" class="top__email margin_top description">info@more-krasoty.ru</a>
                     </div>
                     <div class="desc_left_block__bottom margin_top">
-                        <p class="logo_text block_bottom__title">Мы в социальных сетях</p>
+                        <p class="block_bottom__title">Мы в социальных сетях</p>
                         <div class="block_bottom__buttons">
                             <a href="#" class="bottom_buttons__button"><img src="./img/main/block_1/buttons/vk.svg"
                                     alt="" class="buttons_button__image"></a>
@@ -340,7 +338,8 @@
                 <div class="content__form_block">
                     <form action="" class="form_block__form">
                         <legend class="block_form__title logo_text">Быстрая запись</legend>
-                        <p class="margin_top">Наш менеджер перезвонит в течение нескольких минут, уточнит подробности и
+                        <p class="margin_top block_form__p">Наш менеджер перезвонит в течение нескольких минут, уточнит
+                            подробности и
                             согласует время.</p>
                         <input type="text" placeholder="Ваше имя "
                             class="block_form__input block_form__name margin_top50 ">

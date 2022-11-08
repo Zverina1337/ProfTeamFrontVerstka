@@ -1,0 +1,133 @@
+@import "_common";
+@import "_variables";
+@import "_media";
+
+// header
+
+.header{
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    &__content_block{
+        width: 80%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
+.content_block{
+    &__logo{
+        font-size: 1.7vw;
+    }
+    &__navigation_block{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 50%;
+    }
+    &__contacts_block{
+        margin-top: 10px;
+    }
+}
+.navigation_block{
+    &__link{
+        font-size: 1vw;
+        color: $gray;
+    }
+    &__link:hover{
+        color: $green;
+        transition: 200ms;
+    }
+}
+.contacts_block{
+    &__phone{
+        font-size: 1.3vw;
+        font-weight: normal;
+        text-align: end;
+    }
+    &__worktime{
+        font-size: 0.8vw;
+        margin-top: 5px;
+        font-family: $font_light;
+        color: $gray;
+    }
+}
+
+// header end
+// block_1
+.block_table_of_contents{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__content_block{
+        width: 73%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.content_block{
+    &__left_block{
+        height: 50%;
+        width: 50%;
+        vertical-align: middle;
+    }
+    &__right_block{
+        height: 100%;
+        max-width: 60%;
+    }
+}
+.left_block{
+    &__title{
+        font-size: 3vw;
+        font-weight: 600;
+    }
+    &__desc{
+        font-family: $font_light;
+        margin-top: 20px;
+        font-size: 1.2vw;
+    }
+    &__link{
+        background: $orange;
+        border-radius: 25px;
+        color: white;
+        transition: 200ms;
+        padding: 15px 25px;
+        font-size: 1vw;
+        position: relative;
+        top: 50px;
+    }
+}
+.right_block{
+    &__image_block{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.image_block{
+    &__image{
+        width: 90%;
+        height: 90%;
+    }
+    &__block_links{
+        width: 10%;
+        height: 100%;
+        text-align: end;
+    }
+}
+.block_links{
+    &__link{
+        width: 0.5vw;
+        height: 0.5vh;
+        margin-bottom: 10px;
+        background: url(../img/main/block_1/buttons/instagram.svg) 100% no-repeat;
+    }
+
+}
+// block_1 end

@@ -1,0 +1,43 @@
+@import "_variables";
+
+@font-face {
+    font-family: "Montserrat";
+    src: url('../fonts/static/Montserrat-Medium.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Montserrat Italic";
+    src: url('../fonts/static/Montserrat-Italic.ttf');
+    font-style: normal;
+    font-weight: light;
+}
+
+@font-face {
+    font-family: "Montserrat Bold";
+    src: url('../fonts/static/Montserrat-Bold.ttf');
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Montserrat Light";
+    src: url('../fonts/static/Montserrat-Light.ttf');
+    font-style: light;
+    font-weight: lighter;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: $font_normal;
+    color: $gray;
+}
