@@ -28,6 +28,13 @@
     font-weight: lighter;
 }
 
+@font-face {
+    font-family: "Montserrat Regular";
+    src: url('../fonts/static/Montserrat-Regular.ttf');
+    font-style: light;
+    font-weight: lighter;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -38,6 +45,6 @@ a{
 }
 
 body{
-    font-family: $font_normal;
+    font-family: $font_regular;
     color: $gray;
 }

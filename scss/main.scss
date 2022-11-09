@@ -2,13 +2,14 @@
 @import "_variables";
 @import "_media";
 
-// header
+// header start
 
 .header{
-    height: 70px;
+    height: 5vw;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: url("../img/main/block_1/bg.png");
     
     &__content_block{
         width: 80%;
@@ -20,6 +21,7 @@
 .content_block{
     &__logo{
         font-size: 1.7vw;
+        font-family: $font_normal;
     }
     &__navigation_block{
         display: flex;
@@ -28,7 +30,7 @@
         width: 50%;
     }
     &__contacts_block{
-        margin-top: 10px;
+        margin-top: 1vw;
     }
 }
 .navigation_block{
@@ -49,18 +51,20 @@
     }
     &__worktime{
         font-size: 0.8vw;
-        margin-top: 5px;
+        margin-top: 0.3vw;
         font-family: $font_light;
         color: $gray;
     }
 }
 
 // header end
-// block_1
+// block_1 start
+
 .block_table_of_contents{
     display: flex;
     justify-content: center;
     align-items: center;
+    background: url("../img/main/block_1/bg.png");
 
     &__content_block{
         width: 73%;
@@ -74,32 +78,33 @@
     &__left_block{
         height: 50%;
         width: 50%;
-        vertical-align: middle;
     }
     &__right_block{
         height: 100%;
-        max-width: 60%;
+        max-width: 50%;
+        align-self: flex-end;
     }
 }
 .left_block{
     &__title{
         font-size: 3vw;
         font-weight: 600;
+        line-height: 4vw;
     }
     &__desc{
         font-family: $font_light;
-        margin-top: 20px;
-        font-size: 1.2vw;
+        margin: 1.8vw 0;
+        font-size: 1.3vw;
     }
     &__link{
         background: $orange;
-        border-radius: 25px;
+        border-radius: 2vw;
         color: white;
         transition: 200ms;
-        padding: 15px 25px;
+        padding: 1vw 1.7vw;
         font-size: 1vw;
         position: relative;
-        top: 50px;
+        top: 3.5vw;
     }
 }
 .right_block{
@@ -113,21 +118,332 @@
 .image_block{
     &__image{
         width: 90%;
-        height: 90%;
     }
     &__block_links{
         width: 10%;
         height: 100%;
         text-align: end;
+        margin-bottom: 9vw;
     }
 }
 .block_links{
     &__link{
-        width: 0.5vw;
-        height: 0.5vh;
-        margin-bottom: 10px;
-        background: url(../img/main/block_1/buttons/instagram.svg) 100% no-repeat;
+        line-height: 3vw;
     }
-
+    &__image{
+        width: 2vw;
+        height: 2vw;
+    }
+    &__image:hover{
+        transform: scale(1.2);
+        transition: 400ms;
+    }
 }
+
 // block_1 end
+// block_2 start
+
+.about_block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__content_block{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 73%;
+    }
+}
+.content_block{
+    &__saloon_block{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-height: 60%;
+        width: 100%;
+    }
+    &__advantages_block{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 7vw;
+    }
+}
+.saloon_block{
+    &__block_text{
+        max-width: 47%;
+    }
+    &__image_block{
+        align-self: flex-end;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 40%;
+        position: relative;
+        top: 1.5vw;
+    }
+    &__image_block:hover{
+        .image_block__effect_block{
+            opacity: 1;
+            transition: 400ms;
+        }
+        .image_block__image{
+            filter: brightness(0.4);
+            transition: 400ms;
+        }
+    }
+}
+.block_text{
+    &__title{
+        font-size: 3vw;
+        font-family: $font_normal;
+        font-weight: 600;
+        line-height: 4vw;
+        margin-top: 2.1vw;
+    }
+    &__header_text{
+        font-size: 1.2vw;
+        font-family: $font_regular;
+        font-weight: 500;
+        margin-top: 2.1vw;;
+        line-height: 2vw;
+    }
+    &__main_text{
+        font-size: 1vw;
+        font-family: $font_light;
+        font-weight: 100;
+        margin: 1vw 0;
+        line-height: 1.6vw;
+    }
+}
+.image_block{
+    &__image{
+        width: 100%;
+    }
+    &__effect_block{
+        width: 100%;
+        position: absolute;
+        text-align: center;
+        opacity: 0;
+    }
+}
+
+.effect_block{
+    &__description{
+        color: white;
+        font-size: 1vw;
+    }
+}
+.advantages_block{
+    &__advantage_block{
+        text-align: center;
+        width: 28%;
+    }
+}
+.advantage_block{
+    &__image{
+        width: 15%;
+    }
+    &__title{
+        font-size: 1.1vw;
+        margin-top: 2.1vw;
+        letter-spacing: 0.5px;
+    }
+    &__description{
+        font-size: 0.9vw;
+        font-family: $font_regular;
+        margin-top: 1vw;
+        line-height: 1.5vw;
+    }
+}
+
+// block_2 end
+// block_3 start
+
+.block_services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__content_block{
+        width: 75%;
+    }
+}
+.content_block{
+    &__title{
+        font-size: 3vw;
+        margin: 5vw 0 2vw;
+        font-family: $font_normal;
+    }
+    &__services_block{
+        display: flex;
+        flex-wrap: wrap;
+        height: 50vw;
+    }
+}
+.services_block{
+    &__service_block{
+        width: 33%;
+    }
+}
+.service_block{
+    &__image{
+        width: 90%;
+    }
+    &__title{
+        font-size: 1.2vw;
+        margin: 1vw 0;
+    }
+    &__description{
+        font-size: 0.8vw;
+        margin-bottom: 2vw;
+    }
+    &__link{
+        background: $orange;
+        border-radius: 2vw;
+        color: white;
+        transition: 200ms;
+        padding: 0.6vw 1.3vw;
+        font-size: 1vw;
+    }
+}
+
+// block_3 end
+// block_4 start 
+
+.block_services_price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5vw;
+
+    &__content_block{
+        width: 75%;
+    }
+}
+.content_block{
+    &__links_block{
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2.5vw;
+    }
+    &__table_block{
+        width: 100%;        
+    }
+    &__title{
+        font-size: 3vw;
+        font-family: $font_normal;
+    }
+}
+.links_block{
+    &__link{
+        color: black;
+        font-size: 1vw;
+    }
+    &__link:hover{
+        color: $green;
+        transition: 200ms;
+        border-bottom: 2px solid $green;
+    }
+}
+.table_block{
+    &__column_block{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.column_block{
+    &__row_block{
+        width: 45%;
+        height: 5vw;
+    }
+}
+.row_block{
+    &__inner_block{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.inner_block{
+    &__price{
+        color: $green;
+        font-size: 1.4vw;
+    }
+}
+.text_block{
+    &__title{
+        font-size: 1.2vw;
+        font-family: $font_light;
+    }
+    &__description{
+        font-size: 0.9vw;
+        margin-top: 0.5vw;
+    }
+}
+
+// block_4 end
+// block_5 start
+
+.block_masters{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $lightgray;
+    
+    &__content_block{
+        width: 75%;
+        margin-bottom: 5vw;
+    }
+}
+.content_block{
+    &__title{
+        font-size: 3vw;
+        font-family: $font_normal;
+    }
+    &__description{
+        margin-bottom: 1vw;
+    }
+    &__block_employees{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.block_employees{
+    &__block_employee{
+    }
+    &__block_employee:hover .image_block__image{
+        filter: brightness(0.4);
+        transform: translateY(-0.5vw);
+        box-shadow: 0 15px 15px lightgray;
+        transition: 400ms;
+    }
+    &__block_employee:hover .image_block__effect{
+        opacity: 1;
+        transition: 400ms;
+    }
+}
+.block_employee{
+    &__image_block{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+}
+.image_block{
+    &__effect{
+        position: absolute;
+        color: white;
+        opacity: 0;
+    }
+    &__image{
+        border-radius: 10px;
+    }
+}
