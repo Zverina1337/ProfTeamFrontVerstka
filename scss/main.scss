@@ -1,6 +1,5 @@
 @import "_common";
 @import "_variables";
-@import "_media";
 
 // header start
 
@@ -19,9 +18,11 @@
     }
 }
 .content_block{
-    &__logo{
-        font-size: 1.7vw;
-        font-family: $font_normal;
+    &__logo_block{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 17%;
     }
     &__navigation_block{
         display: flex;
@@ -31,6 +32,48 @@
     }
     &__contacts_block{
         margin-top: 1vw;
+    }
+}
+.logo_block{
+    &__logo{
+        font-size: 1.7vw;
+        font-family: $font_normal;
+    }
+    &__burger{
+        width: 30px;
+        height: 30px;
+        position: relative;
+        z-index: 2;
+        overflow: hidden;
+        display: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__burger__active span::before{
+        transform: rotate(45deg);
+    }
+    &__burger__active span::after{
+        transform: rotate(-45deg);
+    }
+    &__burger span::before,
+    &__burger span::after,
+    &__burger span {
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #BB1E99;
+    transition: 0.4s;
+    }
+    &__burger span {
+    }
+    &__burger span::before{
+        content: '';
+        top: 1.25vw;
+    }
+    &__burger span::after{
+        content: '';
+        top: 2.5vw;
     }
 }
 .navigation_block{
@@ -75,11 +118,7 @@
 }
 
 .content_block{
-    &__logo_block{
-        text-align: left;
-    }
     &__left_block{
-        height: 50%;
         width: 50%;
     }
     &__right_block{
@@ -111,6 +150,9 @@
     &__link:hover{
         padding: 1.3vw 2vw;
         transition: 400ms;
+    }
+    &__block_links{
+        display: none;
     }
 }
 .right_block{
@@ -180,25 +222,15 @@
     &__block_text{
         max-width: 47%;
     }
-    &__image_block{
+    &__video_block{
         align-self: flex-end;
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        width: 40%;
+        width: 100%;
         position: relative;
         top: 1.5vw;
         cursor: pointer;
-    }
-    &__image_block:hover{
-        .image_block__effect_block{
-            opacity: 1;
-            transition: 400ms;
-        }
-        .image_block__image{
-            filter: brightness(0.4);
-            transition: 400ms;
-        }
     }
 }
 .block_text{
@@ -224,24 +256,13 @@
         line-height: 1.6vw;
     }
 }
-.image_block{
+.video_block{
     &__image{
-        width: 100%;
-    }
-    &__effect_block{
-        width: 100%;
-        position: absolute;
-        text-align: center;
-        opacity: 0;
+        width: 80%;
+        align-self: flex-end;
     }
 }
 
-.effect_block{
-    &__description{
-        color: white;
-        font-size: 1vw;
-    }
-}
 .advantages_block{
     &__advantage_block{
         text-align: center;
@@ -727,7 +748,7 @@
     }
 }
 .content_block{
-    &__navigation_block{
+    &__f_links_block{
         height: 100%;
         width: 40%;
     }
@@ -742,7 +763,7 @@
         font-size: 0.8vw;
     }
 }
-.navigation_block{
+.f_links_block{
     &__link{
         font-size: 0.8vw;
     }

@@ -1,6 +1,6 @@
-let burger = document.querySelector('.nav__menu_btn')
-let menu = document.querySelector('.nav__links')
+let burger = document.querySelector('.logo_block__burger')
+let menu = document.querySelectorAll('.navigation_block__link')
 
 burger.addEventListener('click', ()=>{
-    menu.classList.toggle('active')
+    burger.classList.toggle('logo_block__burger__active')
 })
