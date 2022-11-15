@@ -1,6 +1,5 @@
 @import "_common";
 @import "_variables";
-
 // header start
 
 .header{
@@ -40,40 +39,47 @@
         font-family: $font_normal;
     }
     &__burger{
-        width: 30px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        z-index: 1000;
+        width: 50px;
         height: 30px;
-        position: relative;
-        z-index: 2;
-        overflow: hidden;
-        display: none;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    &__burger__active span::before{
-        transform: rotate(45deg);
-    }
-    &__burger__active span::after{
-        transform: rotate(-45deg);
+        transition: 0.4s;
     }
     &__burger span::before,
     &__burger span::after,
     &__burger span {
-    position: absolute;
-    width: 100%;
-    height: 3px;
-    background-color: #BB1E99;
-    transition: 0.4s;
+        position: absolute;
+        width: 35px;
+        height: 4px;
+        background-color: gray;
+        transition: 0.4s;
+        border-radius: 5px;
     }
     &__burger span {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
     &__burger span::before{
         content: '';
-        top: 1.25vw;
+        top: -10px;
     }
     &__burger span::after{
         content: '';
-        top: 2.5vw;
+        top: 10px;
+    }
+    &__burger__active span::before{
+        transform: rotate(45deg);
+        top: 0;
+    }
+    &__burger__active span::after{
+        transform: rotate(-45deg);
+        top: 0;
+    }
+    &__burger__active span{
+        background-color: transparent;
     }
 }
 .navigation_block{
@@ -770,3 +776,10 @@
 }
 
 // footer end
+
+// active classes
+
+.body__blur{
+    transition: 1s;
+    filter: blur(15px);
+}

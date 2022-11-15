@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>Мир красоты</title>
 </head>
 
@@ -14,17 +15,17 @@
     <header class="header">
         <div class="header__content_block">
             <div class="content_block__logo_block">
-                <div class="logo_block__burger">
+                <a class="logo_block__burger" href="#">
                     <span></span>
-                </div>
+                </a>
                 <h1 class="logo_block__logo">Мир красоты</h1>
             </div>
             <nav class="content_block__navigation_block">
-                <a href="#" class="navigation_block__link">Услуги и цены</a>
-                <a href="#" class="navigation_block__link">Мастера</a>
-                <a href="#" class="navigation_block__link">Наши работы</a>
-                <a href="#" class="navigation_block__link">О нас</a>
-                <a href="#" class="navigation_block__link">Контакты</a>
+                <a href="#" data-goto=".block_services_price" class="navigation_block__link">Услуги и цены</a>
+                <a href="#" data-goto=".block_masters" class="navigation_block__link">Мастера</a>
+                <a href="#" data-goto=".block_our_works" class="navigation_block__link">Наши работы</a>
+                <a href="#" data-goto='.about_block' class="navigation_block__link">О нас</a>
+                <a href="#" data-goto='.block_contacts' class="navigation_block__link">Контакты</a>
             </nav>
             <div class="content_block__contacts_block">
                 <h2 class="contacts_block__phone">8 (499) 686-17-62</h2>
@@ -57,7 +58,7 @@
                 </div>
             </div>
         </section>
-        <section class="about_block">
+        <section class="about_block" name="about_block">
             <div class="about_block__content_block">
                 <div class="content_block__saloon_block">
                     <div class="saloon_block__block_text">
@@ -366,7 +367,7 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" name="footer">
         <div class="footer__content_block">
             <div class="content_block__copyright">
                 <p class="copyright__title">© 2020 «Море красоты»</p>
