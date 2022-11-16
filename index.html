@@ -146,15 +146,23 @@
         <section class="block_services_price">
             <div class="block_services_price__content_block">
                 <h1 class="content_block__title">Услуги и цены</h1>
-                <div class="content_block__links_block">
-                    <a href="#" class="links_block__link">Стрижка и укладка</a>
-                    <a href="#" class="links_block__link">Косметология</a>
-                    <a href="#" class="links_block__link">Маникюр и педикюр</a>
-                    <a href="#" class="links_block__link">Макияж</a>
-                    <a href="#" class="links_block__link">Брови и ресницы</a>
-                    <a href="#" class="links_block__link">Массаж</a>
+                <div class="links_block__arrows_block">
+                    <button class="arrows_block__left_button" onclick="decrement()">
+                        <img src="./img/main/block_6/arrows/left_arrow.svg" alt="arrow" class="left_button__arrow_image">
+                    </button>
+                    <button class="arrows_block__right_button" onclick="increment()">
+                        <img src="./img/main/block_6/arrows/right_arrow.svg" alt="arrow" class="right_button__arrow_image">
+                    </button>
                 </div>
-                <table class="content_block__table_block">
+                <div class="content_block__links_block">
+                    <a href="#" class="links_block__link" data-number="1">Стрижка и укладка</a>
+                    <a href="#" class="links_block__link" data-number="2">Косметология</a>
+                    <a href="#" class="links_block__link" data-number="3">Маникюр и педикюр</a>
+                    <a href="#" class="links_block__link" data-number="4">Макияж</a>
+                    <a href="#" class="links_block__link" data-number="5">Брови и ресницы</a>
+                    <a href="#" class="links_block__link" data-number="6">Массаж</a>
+                </div>
+                <table class="content_block__table_block" data-number="1">
                     <tr class="table_block__column_block">
                         <td class="column_block__row_block">
                             <div class="row_block__inner_block">
@@ -230,6 +238,416 @@
                                 <div class="inner_block__text_block">
                                     <h1 class="text_block__title">Причёска вечерняя (свадебная)</h1>
                                     <p class="text_block__description">Короткие волосы</p>
+                                </div>
+                                <h1 class="inner_block__price">3000 ₽</h1>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <table class="content_block__table_block" data-number="2">
+                    <tr class="table_block__column_block">
+                        <td class="column_block__row_block">
+                            <div class="row_block__inner_block">
+                                <div class="inner_block__text_block">
+                                    <h1 class="text_block__title">Чистка лица</h1>
+                                    <p class="text_block__description">Морщины, угри и тд</p>
+                                </div>
+                                <h1 class="inner_block__price">1200 ₽</h1>
+                            </div>
+                        </td>
+                        <td class="column_block__row_block">
+                            <div class="row_block__inner_block">
+                                <div class="inner_block__text_block">
+                                    <h1 class="text_block__title">Чистка лица</h1>
+                                    <p class="text_block__description">Морщины, угри и тд</p>
+                                </div>
+                                <h1 class="inner_block__price">1200 ₽</h1>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="table_block__column_block">
+                        <td class="column_block__row_block">
+                            <div class="row_block__inner_block">
+                                <div class="inner_block__text_block">
+                                    <h1 class="text_block__title">Чистка лица</h1>
+                                    <p class="text_block__description">Морщины, угри и тд</p>
+                                </div>
+                                <h1 class="inner_block__price">1200 ₽</h1>
+                            </div>
+                        </td>
+                        <td class="column_block__row_block">
+                            <div class="row_block__inner_block">
+                                <div class="inner_block__text_block">
+                                    <h1 class="text_block__title">Чистка лица</h1>
+                                    <p class="text_block__description">Морщины, угри и тд</p>
+                                </div>
+                                <h1 class="inner_block__price">1200 ₽</h1>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="table_block__column_block">
+                        <td class="column_block__row_block">
+                            <div class="row_block__inner_block">
+                                <div class="inner_block__text_block">
+                                    <h1 class="text_block__title">Чистка лица</h1>
+                                    <p class="text_block__description">Морщины, угри и тд</p>
+                                </div>
+                                <h1 class="inner_block__price">1200 ₽</h1>
+                            </div>
+                        </td>
+                        <td class="column_block__row_block">
+                            <div class="row_block__inner_block">
+                                <div class="inner_block__text_block">
+                                    <h1 class="text_block__title">Чистка лица</h1>
+                                    <p class="text_block__description">Морщины, угри и тд</p>
+                                </div>
+                                <h1 class="inner_block__price">1200 ₽</h1>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="table_block__column_block">
+                        <td class="column_block__row_block">
+                            <div class="row_block__inner_block">
+                                <div class="inner_block__text_block">
+                                    <h1 class="text_block__title">Чистка лица</h1>
+                                    <p class="text_block__description">Морщины, угри и тд</p>
+                                </div>
+                                <h1 class="inner_block__price">1200 ₽</h1>
+                            </div>
+                        </td>
+                        <td class="column_block__row_block">
+                            <div class="row_block__inner_block">
+                                <div class="inner_block__text_block">
+                                    <h1 class="text_block__title">Чистка лица</h1>
+                                    <p class="text_block__description">Морщины, угри и тд</p>
+                                </div>
+                                <h1 class="inner_block__price">3000 ₽</h1>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <table class="content_block__table_block" data-number="3">
+                    <tr class="table_block__column_block">
+                        <td class="column_block__row_block">
+                            <div class="row_block__inner_block">
+                                <div class="inner_block__text_block">
+                                    <h1 class="text_block__title">Маникюр</h1>
+                                    <p class="text_block__description">Короткие ногти</p>
+                                </div>
+                                <h1 class="inner_block__price">1200 ₽</h1>
+                            </div>
+                        </td>
+                        <td class="column_block__row_block">
+                            <div class="row_block__inner_block">
+                                <div class="inner_block__text_block">
+                                    <h1 class="text_block__title">Маникюр</h1>
+                                    <p class="text_block__description">Короткие ногти</p>
+                                </div>
+                                <h1 class="inner_block__price">1200 ₽</h1>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="table_block__column_block">
+                        <td class="column_block__row_block">
+                            <div class="row_block__inner_block">
+                                <div class="inner_block__text_block">
+                                    <h1 class="text_block__title">Маникюр</h1>
+                                    <p class="text_block__description">Короткие ногти</p>
+                                </div>
+                                <h1 class="inner_block__price">1200 ₽</h1>
+                            </div>
+                        </td>
+                        <td class="column_block__row_block">
+                            <div class="row_block__inner_block">
+                                <div class="inner_block__text_block">
+                                    <h1 class="text_block__title">Маникюр</h1>
+                                    <p class="text_block__description">Короткие ногти</p>
+                                </div>
+                                <h1 class="inner_block__price">1200 ₽</h1>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="table_block__column_block">
+                        <td class="column_block__row_block">
+                            <div class="row_block__inner_block">
+                                <div class="inner_block__text_block">
+                                    <h1 class="text_block__title">Маникюр</h1>
+                                    <p class="text_block__description">Короткие ногти</p>
+                                </div>
+                                <h1 class="inner_block__price">1200 ₽</h1>
+                            </div>
+                        </td>
+                        <td class="column_block__row_block">
+                            <div class="row_block__inner_block">
+                                <div class="inner_block__text_block">
+                                    <h1 class="text_block__title">Маникюр</h1>
+                                    <p class="text_block__description">Короткие ногти</p>
+                                </div>
+                                <h1 class="inner_block__price">1200 ₽</h1>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="table_block__column_block">
+                        <td class="column_block__row_block">
+                            <div class="row_block__inner_block">
+                                <div class="inner_block__text_block">
+                                    <h1 class="text_block__title">Маникюр</h1>
+                                    <p class="text_block__description">Короткие ногти</p>
+                                </div>
+                                <h1 class="inner_block__price">1200 ₽</h1>
+                            </div>
+                        </td>
+                        <td class="column_block__row_block">
+                            <div class="row_block__inner_block">
+                                <div class="inner_block__text_block">
+                                    <h1 class="text_block__title">Маникюр</h1>
+                                    <p class="text_block__description">Короткие ногти</p>
+                                </div>
+                                <h1 class="inner_block__price">3000 ₽</h1>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <table class="content_block__table_block" data-number="4">
+                    <tr class="table_block__column_block">
+                        <td class="column_block__row_block">
+                            <div class="row_block__inner_block">
+                                <div class="inner_block__text_block">
+                                    <h1 class="text_block__title">Макияж</h1>
+                                    <p class="text_block__description">Прикольный</p>
+                                </div>
+                                <h1 class="inner_block__price">1200 ₽</h1>
+                            </div>
+                        </td>
+                        <td class="column_block__row_block">
+                            <div class="row_block__inner_block">
+                                <div class="inner_block__text_block">
+                                    <h1 class="text_block__title">Макияж</h1>
+                                    <p class="text_block__description">Прикольный</p>
+                                </div>
+                                <h1 class="inner_block__price">1200 ₽</h1>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="table_block__column_block">
+                        <td class="column_block__row_block">
+                            <div class="row_block__inner_block">
+                                <div class="inner_block__text_block">
+                                    <h1 class="text_block__title">Макияж</h1>
+                                    <p class="text_block__description">Прикольный</p>
+                                </div>
+                                <h1 class="inner_block__price">1200 ₽</h1>
+                            </div>
+                        </td>
+                        <td class="column_block__row_block">
+                            <div class="row_block__inner_block">
+                                <div class="inner_block__text_block">
+                                    <h1 class="text_block__title">Макияж</h1>
+                                    <p class="text_block__description">Прикольный</p>
+                                </div>
+                                <h1 class="inner_block__price">1200 ₽</h1>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="table_block__column_block">
+                        <td class="column_block__row_block">
+                            <div class="row_block__inner_block">
+                                <div class="inner_block__text_block">
+                                    <h1 class="text_block__title">Макияж</h1>
+                                    <p class="text_block__description">Прикольный</p>
+                                </div>
+                                <h1 class="inner_block__price">1200 ₽</h1>
+                            </div>
+                        </td>
+                        <td class="column_block__row_block">
+                            <div class="row_block__inner_block">
+                                <div class="inner_block__text_block">
+                                    <h1 class="text_block__title">Макияж</h1>
+                                    <p class="text_block__description">Прикольный</p>
+                                </div>
+                                <h1 class="inner_block__price">1200 ₽</h1>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="table_block__column_block">
+                        <td class="column_block__row_block">
+                            <div class="row_block__inner_block">
+                                <div class="inner_block__text_block">
+                                    <h1 class="text_block__title">Макияж</h1>
+                                    <p class="text_block__description">Прикольный</p>
+                                </div>
+                                <h1 class="inner_block__price">1200 ₽</h1>
+                            </div>
+                        </td>
+                        <td class="column_block__row_block">
+                            <div class="row_block__inner_block">
+                                <div class="inner_block__text_block">
+                                    <h1 class="text_block__title">Макияж</h1>
+                                    <p class="text_block__description">Прикольный</p>
+                                </div>
+                                <h1 class="inner_block__price">3000 ₽</h1>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <table class="content_block__table_block" data-number="5">
+                    <tr class="table_block__column_block">
+                        <td class="column_block__row_block">
+                            <div class="row_block__inner_block">
+                                <div class="inner_block__text_block">
+                                    <h1 class="text_block__title">Брови</h1>
+                                    <p class="text_block__description">Прикольные</p>
+                                </div>
+                                <h1 class="inner_block__price">1200 ₽</h1>
+                            </div>
+                        </td>
+                        <td class="column_block__row_block">
+                            <div class="row_block__inner_block">
+                                <div class="inner_block__text_block">
+                                    <h1 class="text_block__title">Брови</h1>
+                                    <p class="text_block__description">Прикольные</p>
+                                </div>
+                                <h1 class="inner_block__price">1200 ₽</h1>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="table_block__column_block">
+                        <td class="column_block__row_block">
+                            <div class="row_block__inner_block">
+                                <div class="inner_block__text_block">
+                                    <h1 class="text_block__title">Брови</h1>
+                                    <p class="text_block__description">Прикольные</p>
+                                </div>
+                                <h1 class="inner_block__price">1200 ₽</h1>
+                            </div>
+                        </td>
+                        <td class="column_block__row_block">
+                            <div class="row_block__inner_block">
+                                <div class="inner_block__text_block">
+                                    <h1 class="text_block__title">Брови</h1>
+                                    <p class="text_block__description">Прикольные</p>
+                                </div>
+                                <h1 class="inner_block__price">1200 ₽</h1>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="table_block__column_block">
+                        <td class="column_block__row_block">
+                            <div class="row_block__inner_block">
+                                <div class="inner_block__text_block">
+                                    <h1 class="text_block__title">Брови</h1>
+                                    <p class="text_block__description">Прикольные</p>
+                                </div>
+                                <h1 class="inner_block__price">1200 ₽</h1>
+                            </div>
+                        </td>
+                        <td class="column_block__row_block">
+                            <div class="row_block__inner_block">
+                                <div class="inner_block__text_block">
+                                    <h1 class="text_block__title">Брови</h1>
+                                    <p class="text_block__description">Прикольные</p>
+                                </div>
+                                <h1 class="inner_block__price">1200 ₽</h1>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="table_block__column_block">
+                        <td class="column_block__row_block">
+                            <div class="row_block__inner_block">
+                                <div class="inner_block__text_block">
+                                    <h1 class="text_block__title">Брови</h1>
+                                    <p class="text_block__description">Прикольные</p>
+                                </div>
+                                <h1 class="inner_block__price">1200 ₽</h1>
+                            </div>
+                        </td>
+                        <td class="column_block__row_block">
+                            <div class="row_block__inner_block">
+                                <div class="inner_block__text_block">
+                                    <h1 class="text_block__title">Брови</h1>
+                                    <p class="text_block__description">Прикольные</p>
+                                </div>
+                                <h1 class="inner_block__price">3000 ₽</h1>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <table class="content_block__table_block" data-number="6">
+                    <tr class="table_block__column_block">
+                        <td class="column_block__row_block">
+                            <div class="row_block__inner_block">
+                                <div class="inner_block__text_block">
+                                    <h1 class="text_block__title">Массаж</h1>
+                                    <p class="text_block__description">Крутой</p>
+                                </div>
+                                <h1 class="inner_block__price">1200 ₽</h1>
+                            </div>
+                        </td>
+                        <td class="column_block__row_block">
+                            <div class="row_block__inner_block">
+                                <div class="inner_block__text_block">
+                                    <h1 class="text_block__title">Массаж</h1>
+                                    <p class="text_block__description">Крутой</p>
+                                </div>
+                                <h1 class="inner_block__price">1200 ₽</h1>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="table_block__column_block">
+                        <td class="column_block__row_block">
+                            <div class="row_block__inner_block">
+                                <div class="inner_block__text_block">
+                                    <h1 class="text_block__title">Массаж</h1>
+                                    <p class="text_block__description">Крутой</p>
+                                </div>
+                                <h1 class="inner_block__price">1200 ₽</h1>
+                            </div>
+                        </td>
+                        <td class="column_block__row_block">
+                            <div class="row_block__inner_block">
+                                <div class="inner_block__text_block">
+                                    <h1 class="text_block__title">Массаж</h1>
+                                    <p class="text_block__description">Крутой</p>
+                                </div>
+                                <h1 class="inner_block__price">1200 ₽</h1>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="table_block__column_block">
+                        <td class="column_block__row_block">
+                            <div class="row_block__inner_block">
+                                <div class="inner_block__text_block">
+                                    <h1 class="text_block__title">Массаж</h1>
+                                    <p class="text_block__description">Крутой</p>
+                                </div>
+                                <h1 class="inner_block__price">1200 ₽</h1>
+                            </div>
+                        </td>
+                        <td class="column_block__row_block">
+                            <div class="row_block__inner_block">
+                                <div class="inner_block__text_block">
+                                    <h1 class="text_block__title">Массаж</h1>
+                                    <p class="text_block__description">Крутой</p>
+                                </div>
+                                <h1 class="inner_block__price">1200 ₽</h1>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="table_block__column_block">
+                        <td class="column_block__row_block">
+                            <div class="row_block__inner_block">
+                                <div class="inner_block__text_block">
+                                    <h1 class="text_block__title">Массаж</h1>
+                                    <p class="text_block__description">Крутой</p>
+                                </div>
+                                <h1 class="inner_block__price">1200 ₽</h1>
+                            </div>
+                        </td>
+                        <td class="column_block__row_block">
+                            <div class="row_block__inner_block">
+                                <div class="inner_block__text_block">
+                                    <h1 class="text_block__title">Массаж</h1>
+                                    <p class="text_block__description">Крутой</p>
                                 </div>
                                 <h1 class="inner_block__price">3000 ₽</h1>
                             </div>
@@ -356,9 +774,9 @@
                             подробности и
                             согласует время.</p>
                         <input type="text" placeholder="Ваше имя "
-                            class="form__input form__name"><br><br>
+                            class="form__input form__name" name="username"><br><br>
                         <input type="text" placeholder="+7 (___) ___-__-__"
-                            class="form__input form__phone_number"><br><br>
+                            class="form__input form__phone_number" name="phone_number"><br><br>
                         <button type="submit" class="form__button">Записаться</button>
                         <p class="form__personal_data">Нажимая на кнопку вы соглашаетесь
                             с <a href="#" class="form__link">обработкой персональных данных</a></p>

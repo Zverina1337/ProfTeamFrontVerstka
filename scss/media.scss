@@ -257,6 +257,10 @@
     .block_services_price{
         &__content_block{
             width: 80%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
         }
     }
     .content_block{
@@ -268,10 +272,19 @@
         &__title{
             font-size: 6vw;
         }
+        &__table_block{
+            display: none;
+        }
     }
     .links_block{
         &__link{
-            font-size: 3vw;
+            font-size: 4.5vw;
+            text-align: center;
+            display: none;
+            pointer-events: none;
+        }
+        &__arrows_block{
+            display: block;
         }
     }
     .table_block{
