@@ -46,6 +46,7 @@
         width: 50px;
         height: 30px;
         transition: 0.4s;
+        display: none;
     }
     &__burger span::before,
     &__burger span::after,
@@ -156,6 +157,7 @@
     &__link:hover{
         padding: 1.3vw 2vw;
         transition: 400ms;
+        color: white !important;
     }
     &__block_links{
         display: none;
@@ -339,10 +341,17 @@
     &__link{
         background: $orange;
         border-radius: 2vw;
-        color: white;
         transition: 200ms;
         padding: 0.6vw 1.3vw;
         font-size: 1vw;
+        color: white;
+        display: block;
+        width: 8vw;
+        text-align: center;
+    }
+    &__link:hover{
+        color: white !important;
+        transform: scale(1.2);
     }
 }
 
@@ -597,6 +606,11 @@
         cursor: pointer;
     }
 
+    &__block a{
+        display: block;
+        width: 100%;
+    }
+
     &__block:hover .block__loupe_block{
         opacity: 1;
         transition: 400ms;
@@ -619,6 +633,7 @@
         text-align: center;
         opacity: 0;
         cursor: pointer;
+        pointer-events: none;
     }
 }
 .brands_block{
@@ -798,10 +813,10 @@
 }
 
 // footer end
+// modal
+
+.modal{
+    transition: all ease 1s;
+}
 
 // active classes
-
-.body__blur{
-    transition: 1s;
-    filter: blur(15px);
-}

@@ -41,8 +41,10 @@
     box-sizing: border-box;
 }
 a{
-    color: $blue;
-    text-decoration: none;
+    text-decoration: none !important;
+}
+a:hover{
+    color: $green !important;
 }
 
 body{
