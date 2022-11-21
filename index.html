@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>Мир красоты</title>
 </head>
@@ -58,7 +59,7 @@
                 </div>
             </div>
         </section>
-        <section class="about_block" name="about_block">
+        <section class="about_block">
             <div class="about_block__content_block">
                 <div class="content_block__saloon_block">
                     <div class="saloon_block__block_text">
@@ -705,41 +706,113 @@
                 <div class="content_block__header_block">
                     <h1 class="header_block__title">Наши работы</h1>
                     <div class="header_block__arrows_block">
-                        <button class="arrows_block__arrow_button">
+                        <div class="arrows_block__arrow_button arrows_block__arrow_button__prev">
                             <img src="./img/main/block_6/arrows/left_arrow.svg" alt="arrow" class="arrow_button__arrow_image">
-                        </button>
-                        <button class="arrows_block__arrow_button">
+                        </div>
+                        <div class="arrows_block__arrow_button arrows_block__arrow_button__next">
                             <img src="./img/main/block_6/arrows/right_arrow.svg" alt="arrow" class="arrow_button__arrow_image">
-                        </button>
+                        </div>
                     </div>
                 </div>
-                <div class="content_block__our_works">
-                    <div class="our_works__image_block">
-                        <img src="./img/main/block_6/img1.png" alt="some_work" class="image_block__image">
-                        <div class="image_block__loupe_block">
-                            <img src="./img/main/block_6/search.svg" alt="search_icon" class="loupe_block__image">
-                            <p class="loupe_block__title">Увеличить</p>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="swiper-slide__block">
+                                <a data-fslightbox="gallery" data-alt="image1" href="img/main/block_6/img1.png">
+                                    <img src="img/main/block_6/img1.png" alt="" class="block__work_image">
+                                </a>
+                                <div class="block__loupe_block">
+                                    <img src="./img/main/block_6/search.svg" alt="" class="loupe_block__loupe_image">
+                                    <p class="loupe_block__title">Увеличить</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide__block">
+                                <a data-fslightbox="gallery" data-alt="image1" href="img/main/block_6/img1.png">
+                                    <img src="img/main/block_6/img1.png" alt="" class="block__work_image">
+                                </a>
+                                <div class="block__loupe_block">
+                                    <img src="./img/main/block_6/search.svg" alt="" class="loupe_block__loupe_image">
+                                    <p class="loupe_block__title">Увеличить</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide__block">
+                                <a data-fslightbox="gallery" data-alt="image1" href="img/main/block_6/img1.png">
+                                    <img src="img/main/block_6/img1.png" alt="" class="block__work_image">
+                                </a>
+                                <div class="block__loupe_block">
+                                    <img src="./img/main/block_6/search.svg" alt="" class="loupe_block__loupe_image">
+                                    <p class="loupe_block__title">Увеличить</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide__block">
+                                <a data-fslightbox="gallery" data-alt="image1" href="img/main/block_6/img1.png">
+                                    <img src="img/main/block_6/img1.png" alt="" class="block__work_image">
+                                </a>
+                                <div class="block__loupe_block">
+                                    <img src="./img/main/block_6/search.svg" alt="" class="loupe_block__loupe_image">
+                                    <p class="loupe_block__title">Увеличить</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="our_works__image_block">
-                        <img src="./img/main/block_6/img2.png" alt="some_work" class="image_block__image">
-                        <div class="image_block__loupe_block">
-                            <img src="./img/main/block_6/search.svg" alt="search_icon" class="loupe_block__image">
-                            <p class="loupe_block__title">Увеличить</p>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide__block">
+                                <img src="img/main/block_6/niger.jpg" alt="" class="block__work_image">
+                                <div class="block__loupe_block">
+                                    <img src="./img/main/block_6/search.svg" alt="" class="loupe_block__loupe_image">
+                                    <p class="loupe_block__title">Увеличить</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide__block">
+                                <img src="img/main/block_6/niger.jpg" alt="" class="block__work_image">
+                                <div class="block__loupe_block">
+                                    <img src="./img/main/block_6/search.svg" alt="" class="loupe_block__loupe_image">
+                                    <p class="loupe_block__title">Увеличить</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide__block">
+                                <img src="img/main/block_6/niger.jpg" alt="" class="block__work_image">
+                                <div class="block__loupe_block">
+                                    <img src="./img/main/block_6/search.svg" alt="" class="loupe_block__loupe_image">
+                                    <p class="loupe_block__title">Увеличить</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide__block">
+                                <img src="img/main/block_6/niger.jpg" alt="" class="block__work_image">
+                                <div class="block__loupe_block">
+                                    <img src="./img/main/block_6/search.svg" alt="" class="loupe_block__loupe_image">
+                                    <p class="loupe_block__title">Увеличить</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="our_works__image_block">
-                        <img src="./img/main/block_6/img3.png" alt="some_work" class="image_block__image">
-                        <div class="image_block__loupe_block">
-                            <img src="./img/main/block_6/search.svg" alt="search_icon" class="loupe_block__image">
-                            <p class="loupe_block__title">Увеличить</p>
-                        </div>
-                    </div>
-                    <div class="our_works__image_block">
-                        <img src="./img/main/block_6/img4.png" alt="some_work" class="image_block__image">
-                        <div class="image_block__loupe_block">
-                            <img src="./img/main/block_6/search.svg" alt="search_icon" class="loupe_block__image">
-                            <p class="loupe_block__title">Увеличить</p>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide__block">
+                                <img src="img/main/block_6/skala.jpg" alt="" class="block__work_image">
+                                <div class="block__loupe_block">
+                                    <img src="./img/main/block_6/search.svg" alt="" class="loupe_block__loupe_image">
+                                    <p class="loupe_block__title">Увеличить</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide__block">
+                                <img src="img/main/block_6/skala.jpg" alt="" class="block__work_image">
+                                <div class="block__loupe_block">
+                                    <img src="./img/main/block_6/search.svg" alt="" class="loupe_block__loupe_image">
+                                    <p class="loupe_block__title">Увеличить</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide__block">
+                                <img src="img/main/block_6/skala.jpg" alt="" class="block__work_image">
+                                <div class="block__loupe_block">
+                                    <img src="./img/main/block_6/search.svg" alt="" class="loupe_block__loupe_image">
+                                    <p class="loupe_block__title">Увеличить</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide__block">
+                                <img src="img/main/block_6/skala.jpg" alt="" class="block__work_image">
+                                <div class="block__loupe_block">
+                                    <img src="./img/main/block_6/search.svg" alt="" class="loupe_block__loupe_image">
+                                    <p class="loupe_block__title">Увеличить</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -785,7 +858,7 @@
             </div>
         </section>
     </main>
-    <footer class="footer" name="footer">
+    <footer class="footer">
         <div class="footer__content_block">
             <div class="content_block__copyright">
                 <p class="copyright__title">© 2020 «Море красоты»</p>
@@ -799,6 +872,51 @@
             </nav>
         </div>
     </footer>
+<!--    <div class="modal">-->
+<!--        <div class="modal-dialog" role="document" bis_skin_checked="1">-->
+<!--            <div class="modal-content rounded-4 shadow" bis_skin_checked="1">-->
+<!--            <div class="modal-header p-5 pb-4 border-bottom-0" bis_skin_checked="1">-->
+<!--                &lt;!&ndash; <h1 class="modal-title fs-5" >Modal title</h1> &ndash;&gt;-->
+<!--                <h1 class="fw-bold mb-0 fs-2">Sign up for free</h1>-->
+<!--                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>-->
+<!--            </div>-->
+<!--        -->
+<!--            <div class="modal-body p-5 pt-0" bis_skin_checked="1">-->
+<!--                <form class="">-->
+<!--                    <div class="form-floating mb-3" bis_skin_checked="1">-->
+<!--                        <input type="text" class="form-control rounded-3" id="floatingName" placeholder="Ваше имя" required>-->
+<!--                        <label for="floatingName">Имя</label>-->
+<!--                    </div>-->
+<!--                    <div class="form-floating mb-3" bis_skin_checked="1" required>-->
+<!--                        <input type="text" class="form-control rounded-3" id="floatingNumber" placeholder="+7 (___) ___-__-__)">-->
+<!--                        <label for="floatingNumber">Номер телефона</label>-->
+<!--                    </div>-->
+<!--                    <p>Выберите мастера:</p>-->
+<!--                    <select name="form_masters" id="select_masters" class="form-select mb-3" required>-->
+<!--                        <option value="master1">Master 1</option>-->
+<!--                        <option value="master2">Master 2</option>-->
+<!--                        <option value="master3">Master 3</option>-->
+<!--                        <option value="master4">Master 4</option>-->
+<!--                    </select>-->
+<!--                    <p>Выберите услугу:</p>-->
+<!--                    <select name="form_services" id="select_services" class="form-select mb-3" required>-->
+<!--                        <option value="service1">Service 1</option>-->
+<!--                        <option value="service2">Service 2</option>-->
+<!--                        <option value="service3">Service 3</option>-->
+<!--                        <option value="service4">Service 4</option>-->
+<!--                    </select>-->
+<!--                    <div class="form-floating mb-3" bis_skin_checked="1">-->
+<!--                        <input type="date" class="form-control rounded-3" id="floatingDate" placeholder="+7 (___) ___-__-__)">-->
+<!--                        <label for="floatingDate">Дата визита</label>-->
+<!--                    </div>-->
+<!--                    <button class="w-100 mb-2 btn btn-lg rounded-3 btn-outline-dark" type="submit">Записаться</button>-->
+<!--                </form>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="scripts/fslightbox.js"></script>
     <script src="scripts/script.js"></script>
 </body>
 

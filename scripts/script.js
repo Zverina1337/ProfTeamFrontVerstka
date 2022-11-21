@@ -140,3 +140,28 @@ formContacts.addEventListener('submit',(e)=>{
     console.log(`Номер телефона ${phoneNumber}`)
 })
 
+// Слайдер
+
+const swiper = new Swiper('.swiper', {
+    loop: true,
+    navigation: {
+        nextEl: '.arrows_block__arrow_button__prev',
+        prevEl: '.arrows_block__arrow_button__next',
+    },
+});
+
+// Галерея
+
+// Модальное окно
+
+//
+// let modal = document.querySelector('.modal')
+// let left_block__link = document.querySelector('.left_block__link')
+// let btn_close = document.querySelector('.btn-close')
+//
+// left_block__link.addEventListener('click', ()=>{
+//     modal.style.display = 'block'
+// })
+// btn_close.addEventListener('click', ()=>{
+//     modal.style.display = 'none'
+// })
